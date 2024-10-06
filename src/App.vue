@@ -1,19 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+ <IronContacts></IronContacts>
 </template>
 
-<script setup>
-import HelloWorld from './components/HelloWorld.vue';
+<script>
+import IronContacts from './components/IronContacts.vue';  // Asegúrate de tener esta línea si estás importando el componente
+
+export default {
+  name: 'App',
+  components: {
+    IronContacts// Registra el componente aquí
+  }
+}
 </script>
 
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
